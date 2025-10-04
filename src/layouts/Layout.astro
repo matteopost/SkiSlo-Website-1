@@ -44,7 +44,7 @@ const currentLocale = astroI18n.locale;
 				format="webp"                           
 				widths={[640, 1024, 1440, 1920, 2200, 2500]}        
 				sizes="100vw"
-				class="w-screen h-screen object-cover transform origin-center opacity-80 transition-transform animate-fadeZoom"
+				class="w-screen h-screen object-cover transform origin-center opacity-70 transition-transform animate-fadeZoom"
 			/>
 		</div>
 
@@ -65,7 +65,7 @@ const currentLocale = astroI18n.locale;
 
 	@keyframes fadeZoom {
 		from { opacity: 0; transform: scale(1); }
-		to { opacity: 0.8; transform: scale(1.05); }
+		to { opacity: 0.7; transform: scale(1.05); }
 	}
 	.animate-fadeZoom {
 	animation: fadeZoom 2000ms ease-in-out forwards;
