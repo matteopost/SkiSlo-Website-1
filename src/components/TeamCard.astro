@@ -1,0 +1,43 @@
+---
+// TeamCard.astro
+import { astroI18n, t } from "astro-i18n";
+astroI18n.locale;
+
+interface Props {
+  NomeCognome: string;
+  Description: string;
+  Master: string;
+  University: string;
+  Email: string;
+  Linkedin: string;
+  Website: string;
+}
+
+const { NomeCognome, Description, Master, University, Email, Linkedin, Website } = Astro.props;
+---
+
+<div class="w-full aspect-video box flex flex-col font-light">
+  <div class="flex-grow flex flex-col gap-1">
+    <div class="title">{NomeCognome}</div>
+    <div>{Description}</div>
+    <div>{Master}, {University}</div>
+  </div>
+
+  <div class="flex gap-2 mt-2 text-xs sm:text-sm">
+    {Email && (
+      <a href={`mailto:${Email}`} target="_blank" class="hover:opacity-50 transition-opacity">
+        E-Mail
+      </a>
+    )}
+    {Linkedin && (
+      <a href={Linkedin} target="_blank" class="hover:opacity-50 transition-opacity">
+        LinkedIn
+      </a>
+    )}
+    {Website && (
+      <a href={Website} target="_blank" class="hover:opacity-50 transition-opacity">
+        Website
+      </a>
+    )}
+  </div>
+</div>

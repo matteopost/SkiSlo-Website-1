@@ -25,5 +25,50 @@
 		"5":"L’obiettivo finale è validare le simulazioni e applicare gli strumenti sviluppati a scenari reali, supportando gli impianti sciistici nell’adozione di misure di sicurezza efficaci e nella riduzione del numero e della gravità degli incidenti. SkiSlo mira inoltre a creare uno strumento capace di tradurre i risultati dei modelli di rischio in linee guida pratiche per impianti e federazioni sciistiche.",
 		"6":"Storia",
 		"7":"SkiSlo nasce da una tragedia. Durante un allenamento in Val Senales, Matilde Lorenzi è rimasta vittima di un grave incidente. La sua famiglia ha fondato la Fondazione Matilde Lorenzi per promuovere la sicurezza e la prevenzione sulle piste, affinché gli atleti possano allenarsi in ambienti più sicuri. SkiSlo ha fatto propria questa missione, sviluppando tecnologie innovative per ridurre i rischi e trasformare il futuro dello sci — affinché nessun atleta debba affrontare il destino di Matilde."
+	},
+
+	"Team": {
+		"Students": {
+			"AndreaP": {
+				"Description": "Visual and Digital System Designer, che incrocia un approccio human-centered con le nuove tecnologie da Monaco di Baviera con sede a Milano.",
+				"Master": "MSc Design della Comunicazione",
+				"University": "Politecnico di Torino"
+			},
+			"AndreaT": {
+				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
+				"Master": "MSc Communication Design",
+				"University": "Politecnico of Milan"
+			},
+			"Cosmo": {
+				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
+				"Master": "MSc Communication Design",
+				"University": "Politecnico of Torino"
+			},
+			"Davide": {
+				"Description": "Studente di ingegneria quantistica, si concentra sugli effetti quantistici nei nanosistemi e sulle nanotecnologie per applicazioni scientifiche.",
+				"Master": "MSc Ingenieria Fisica",
+				"University": "Politecnico of Milan"
+			},
+			"Giulia": {
+				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
+				"Master": "MSc Communication Design",
+				"University": "Politecnico of Milan"
+			},
+			"Nunzio": {
+				"Description": "Esperto in Intelligenza Artificiale, Machine Learning e gestione dei Big Data, con una mentalità imprenditoriale e una forte adattabilità. Motivato dalla passione.",
+				"Master": "MSc Data Science and Engineering",
+				"University": "Politecnico of Torino"
+			},
+			"Matteo": {
+				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
+				"Master": "MSc Communication Design",
+				"University": "Politecnico of Milan"
+			},
+			"Riccardo": {
+				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
+				"Master": "MSc Communication Design",
+				"University": "Politecnico of Torino"
+			}
+		}
 	}
 }

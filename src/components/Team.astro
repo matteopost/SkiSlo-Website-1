@@ -1,38 +1,102 @@
 ---
+import TeamCard from "./TeamCard.astro";
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
+
 ---
 
 <div 
-  x-show="$store.menu.active === 'team'" 
-  x-transition.opacity.duration.100ms
-  x-cloak
-  class="w-full flex flex-col items-center justify-center gap-6 py-8 box"
+    x-show="$store.menu.active === 'team'"
+    x-transition.opacity.duration.100ms
+    x-cloak
+    class="w-full flex flex-col gap-1"
 >
-  <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center mt-4">
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Andrea Pantano
+
+
+    <div class="w-full title box">ASP Students</div>
+    <div class="w-full grid grid-cols-2 gap-1">
+        <TeamCard
+            NomeCognome="Andrea Pantano"
+            Description={t("Team.Students.AndreaP.Description")}
+            Master={t("Team.Students.AndreaP.Master")}
+            University={t("Team.Students.AndreaP.University")}
+            Email="andrea.pantano@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+        <TeamCard
+            NomeCognome="Andrea Tarabotto"
+            Description={t("Team.Students.AndreaT.Description")}
+            Master={t("Team.Students.AndreaT.Master")}
+            University={t("Team.Students.AndreaT.University")}
+            Email="andrea.tarabotto@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+        <TeamCard
+            NomeCognome="Cosmo Spinosa"
+            Description={t("Team.Students.Cosmo.Description")}
+            Master={t("Team.Students.Cosmo.Master")}
+            University={t("Team.Students.Cosmo.University")}
+            Email="cosmo.spinosa@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+        <TeamCard
+            NomeCognome="Davide Cortinovis"
+            Description={t("Team.Students.Davide.Description")}
+            Master={t("Team.Students.Davide.Master")}
+            University={t("Team.Students.Davide.University")}
+            Email="davide1.cortinovis@asp-poli.it"
+            Linkedin="www.linkedin.com/in/davide-cortinovis-8b6690243"
+            Website=""
+        />
+        <TeamCard
+            NomeCognome="Giulia De Pascale"
+            Description={t("Team.Students.Giulia.Description")}
+            Master={t("Team.Students.Giulia.Master")}
+            University={t("Team.Students.Giulia.University")}
+            Email="giulia.depascale@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+        <TeamCard
+            NomeCognome="Nunzio Licalzi"
+            Description={t("Team.Students.Nunzio.Description")}
+            Master={t("Team.Students.Nunzio.Master")}
+            University={t("Team.Students.Nunzio.University")}
+            Email="nunzio.licalzi@asp-poli.it"
+            Linkedin="https://it.linkedin.com/in/nunzio-licalzi-0847a7295"
+            Website="https://github.com/Nuzz23"
+        />
+        <TeamCard
+            NomeCognome="Matteo Postinghel"
+            Description={t("Team.Students.Matteo.Description")}
+            Master={t("Team.Students.Matteo.Master")}
+            University={t("Team.Students.Matteo.University")}
+            Email="matteo.postinghel@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+        <TeamCard
+            NomeCognome="Riccardo Savio"
+            Description={t("Team.Students.Riccardo.Description")}
+            Master={t("Team.Students.Riccardo.Master")}
+            University={t("Team.Students.Riccardo.University")}
+            Email="riccardo.savio@asp-poli.it"
+            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
+            Website="https://matteopostinghel.com/"
+        />
+   
     </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Andrea Trabotto
+
+    <div class="w-full title box">Professors</div>
+    <div class="w-full grid grid-cols-2 gap-1">
+        <TeamCard/>
+        <TeamCard/>
+        <TeamCard/>
+        <TeamCard/>
     </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Cosmo Spinosa
-    </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Davide Cortinovis
-    </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Giulia De Pasquale
-    </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Nunzio Licalzi
-    </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Matteo Postinghel
-    </div>
-    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
-      Riccardo Savio
-    </div>
-  </div>
+    
+
 </div>

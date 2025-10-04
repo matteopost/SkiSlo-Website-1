@@ -9,7 +9,12 @@ astroI18n.locale;
     x-data="{ activeMenu: null }"
     class="fixed flex flex-col gap-1 w-full sm:max-w-sm p-2 sm:p-4 font-light z-50"
 >
-    <img src="/Logo.svg" alt="logo" class="mb-2 max-sm:mt-1 opacity-95">
+    <img 
+        src="/Logo.svg" 
+        alt="logo" 
+        class="mb-2 max-sm:mt-1 opacity-95 cursor-pointer" 
+        @click="$store.menu.active = null"
+    />
 
     <MenuComponent txt={t("nav.1")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'" />
     <MenuComponent txt={t("nav.2")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'" />
