@@ -3,67 +3,67 @@
 @layer utilities {
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-LightItalic.woff2') format('woff2');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-LightItalic.woff2') format('woff2');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Medium.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-MediumItalic.woff2') format('woff2');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-MediumItalic.woff2') format('woff2');
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BoldItalic.woff2') format('woff2');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BoldItalic.woff2') format('woff2');
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Black.woff2') format('woff2');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
-    font-family: 'ABCDiatypeEdu';
-    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BlackItalic.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
+        font-family: 'ABCDiatypeEdu';
+        src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BlackItalic.woff2') format('woff2');
+        font-weight: 900;
+        font-style: italic;
+        font-display: swap;
     }
 
     body {
