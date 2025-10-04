@@ -17,13 +17,15 @@ const { NomeCognome, Description, Master, University, Email, Linkedin, Website }
 ---
 
 <div class="w-full h-full aspect-square box flex flex-col font-light">
-  <div class="flex-grow flex flex-col gap-1">
+  <div class="flex-grow flex flex-col">
     <div class="title">{NomeCognome}</div>
-    <div>{Description}</div>
-    <div>{Master}, {University}</div>
+    <div class="flex flex-col gap-1 mt-[8%]">
+      <div class="text-card">{Description}</div>
+      <div class="text-card opacity-50">{Master}, {University}</div>
+    </div>
   </div>
 
-  <div class="flex gap-2 mt-2 text-xs sm:text-sm">
+  <div class="flex gap-2 mt-2 text-card">
     {Email && (
       <a href={`mailto:${Email}`} target="_blank" class="hover:opacity-50 transition-opacity">
         E-Mail

@@ -4,10 +4,9 @@ import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 
 ---
-
 <div 
-    x-show="$store.menu.active === 'team'"
-    x-transition.opacity.duration.100ms
+x-show="$store.menu.active === 'team'"
+    x-transition.opacity.duration.200ms
     x-cloak
     class="w-full flex flex-col gap-1"
 >
@@ -84,8 +83,8 @@ astroI18n.locale;
             Master={t("Team.Students.Riccardo.Master")}
             University={t("Team.Students.Riccardo.University")}
             Email="riccardo.savio@asp-poli.it"
-            Linkedin="https://www.linkedin.com/in/matteopostinghel/"
-            Website="https://matteopostinghel.com/"
+            Linkedin="https://www.linkedin.com/in/riccardo-savio/"
+            Website=""
         />
    
     </div>

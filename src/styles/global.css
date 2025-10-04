@@ -78,7 +78,12 @@
         height: 100%;
         width: 100%;
         overflow-x: hidden;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
 
+    ::-webkit-scrollbar {
+        display: none;
     }
 
     a{
@@ -94,6 +99,10 @@
     }
 
     .text{
-        @apply text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
+        @apply text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl;
+    }
+
+    .text-card{
+        @apply text-xs sm:text-base md:text-xs lg:text-base xl:text-lg 2xl:text-2xl;
     }
 }
