@@ -1,0 +1,29 @@
+---
+import MenuComponent from "./MenuComponent.astro"
+import LangSwitcher from "../../src/components/LangSwitcher.astro";
+import { astroI18n, t } from "astro-i18n";
+astroI18n.locale;
+---
+
+<div class="flex max-sm:fixed flex-col gap-1 w-full sm:max-w-sm p-4">
+    <img src="/Logo.svg" alt="logo" class="mb-2">
+    <MenuComponent
+    txt={t("nav.1")}
+    link=""
+    />
+    <MenuComponent
+    txt={t("nav.2")}
+    link=""
+    />
+    <MenuComponent
+    txt={t("nav.3")}
+    link=""
+    />
+    <MenuComponent
+    txt={t("nav.4")}
+    link=""
+    />
+
+    <LangSwitcher/>
+
+</div>

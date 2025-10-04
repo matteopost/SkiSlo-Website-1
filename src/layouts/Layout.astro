@@ -1,5 +1,14 @@
+---
+
+import Image from 'astro/components/Image.astro';
+import BgImage from '../assets/bgImage.png';
+import Menu from '../components/Menu.astro';
+import { astroI18n, t } from "astro-i18n";
+const currentLocale = astroI18n.locale;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -7,16 +16,52 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
+	<body class="bg-black text-white relative overflow-hidden min-h-screen">
+		<!-- Background -->
+		<div class="fixed inset-0 -z-50 overflow-hidden">
+			<Image
+				id="bg-image"
+				src={BgImage}
+				alt="Background"
+				class="w-screen h-screen object-cover transform origin-center opacity-90 transition-transform duration-200 ease-out scale-105";
+			/>
+		</div>
+
+
+		<Menu/>
+		<!-- Content -->
+		<!-- <LangSwitcher /> -->
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+
 </style>
+
+
+<script is:inline>
+	const img = document.getElementById("bg-image");
+	const strength = 20;
+
+	if (window.innerWidth >= 640) {
+		// Desktop: mouse-based parallax
+		window.addEventListener("mousemove", (e) => {
+			const x = (e.clientX / window.innerWidth - 0.5) * strength;
+			const y = (e.clientY / window.innerHeight - 0.5) * strength;
+			img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+		});
+		window.addEventListener("mouseleave", () => {
+			img.style.transform = "translate(0, 0) scale(1)";
+		});
+	} else {
+		// Mobile: gyroscope-based parallax
+		if (window.DeviceOrientationEvent) {
+			window.addEventListener("deviceorientation", (event) => {
+				const x = (event.gamma || 0) / 45 * strength; // left-right tilt
+				const y = (event.beta || 0) / 45 * strength;  // front-back tilt
+				img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+			});
+		}
+	}
+</script>

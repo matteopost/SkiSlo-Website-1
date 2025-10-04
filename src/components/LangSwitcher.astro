@@ -1,0 +1,62 @@
+---
+import { astroI18n, l } from "astro-i18n"
+
+interface Props {
+	showCurrent: boolean
+	labels: {
+		[locale: string]: string
+	}
+}
+
+const { showCurrent = true, labels = {} } = Astro.props
+
+const params: Record<string, string> = {}
+for (const [key, value] of Object.entries(Astro.params)) {
+	if (value === undefined) continue
+	params[key] = String(value)
+}
+
+let links = astroI18n.locales.map((locale) => ({
+	locale,
+	href: l(Astro.url.pathname, params, {
+		targetLocale: locale,
+	}),
+	label: labels[locale] || locale.toUpperCase(),
+}))
+
+if (!showCurrent) {
+	links = links.filter((link) => link.locale !== astroI18n.locale)
+}
+---
+
+<!-- <div class="flex items-center gap-1 bg-white/20 text-white/70 px-1 backdrop-blur-md">
+    {links.map(({ href, label, locale }, index) => (
+        <a
+            href={href}
+            class={`transition ${
+                locale === astroI18n.locale ? "text-white" : "text-white/50"
+            }`}
+        >
+            {label}
+        </a>
+    ))
+    .reduce((prev, curr, i) => [
+        prev,
+        i < links.length - 1 ? <span>/</span> : null,
+        curr,
+    ])}
+</div> -->
+
+<div class="flex bg-white/20 hover:bg-white/50 text-white/80 hover:text-white px-1 backdrop-blur-md">
+	{links
+		.filter(({ locale }) => locale !== astroI18n.locale)
+		.map(({ href, label }) => (
+			<a
+				href={href}
+				class="transition w-full"
+			>
+				{label}
+			</a>
+		))}
+</div>
+
