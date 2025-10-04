@@ -16,6 +16,20 @@ const currentLocale = astroI18n.locale;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta name="keywords" content={t("keywords")}/>
+
+		<meta property="og:title" content={t("index.title")} />
+		<meta property="og:description" content={t("description")} />
+		<meta property="og:image" content=`../../src/assets/Card.png` />
+		<meta property="og:url" content={t("url")} />
+		<meta property="og:type" content="website" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={t("index.title")} />
+		<meta name="twitter:description" content={t("description")} />
+		<meta name="twitter:image" content=`../../src/assets/Card.png` />
+
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSLo</title>
 	</head>
