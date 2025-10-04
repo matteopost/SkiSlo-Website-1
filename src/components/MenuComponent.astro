@@ -1,15 +1,20 @@
 ---
 interface Props {
-    txt: string;
-    link: string;
+  txt: string;
+  link: string;
+  active?: boolean;
 }
-const { txt, link, ...rest } = Astro.props;
+
+const { txt, link, active = false, ...rest } = Astro.props;
 ---
 
-<a href={link}
-   {...rest}
-   class="w-full hover:bg-white/50 hover:text-white transition box uppercase cursor-pointer"
+<a
+  href={link}
+  {...rest}
+  class={`w-full transition box uppercase cursor-pointer ${
+    active ? 'bg-white/50 text-white' : 'hover:bg-white/50 hover:text-white'
+  }`}
 >
-    {txt}
-    <slot />
+  {txt}
+  <slot />
 </a>
