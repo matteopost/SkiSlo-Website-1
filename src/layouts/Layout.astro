@@ -42,26 +42,45 @@ const currentLocale = astroI18n.locale;
 
 <script is:inline>
 	const img = document.getElementById("bg-image");
-	const strength = 20;
+	const strength = 25;
+
+	// desktop parallax
+	function desktopParallax(e) {
+		const x = (e.clientX / window.innerWidth - 0.5) * strength;
+		const y = (e.clientY / window.innerHeight - 0.5) * strength;
+		img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+	}
+
+	// mobile gyroscope parallax (from your linked CodePen)
+	function mobileParallax(e) {
+		const x = (e.gamma || 0) / 45 * strength; // tilt left/right
+		const y = (e.beta || 0) / 45 * strength;  // tilt front/back
+		img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+	}
+
+	function resetParallax() {
+		img.style.transform = "translate(0,0) scale(1)";
+	}
 
 	if (window.innerWidth >= 640) {
-		// Desktop: mouse-based parallax
-		window.addEventListener("mousemove", (e) => {
-			const x = (e.clientX / window.innerWidth - 0.5) * strength;
-			const y = (e.clientY / window.innerHeight - 0.5) * strength;
-			img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
-		});
-		window.addEventListener("mouseleave", () => {
-			img.style.transform = "translate(0, 0) scale(1)";
-		});
-	} else {
-		// Mobile: gyroscope-based parallax
-		if (window.DeviceOrientationEvent) {
-			window.addEventListener("deviceorientation", (event) => {
-				const x = (event.gamma || 0) / 45 * strength; // left-right tilt
-				const y = (event.beta || 0) / 45 * strength;  // front-back tilt
-				img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
-			});
+		window.addEventListener("mousemove", desktopParallax);
+		window.addEventListener("mouseleave", resetParallax);
+	} else if (window.DeviceOrientationEvent) {
+		// for iOS permission
+		if (typeof DeviceOrientationEvent.requestPermission === "function") {
+			document.body.addEventListener(
+				"click",
+				() => {
+					DeviceOrientationEvent.requestPermission().then((res) => {
+						if (res === "granted") {
+							window.addEventListener("deviceorientation", mobileParallax);
+						}
+					});
+				},
+				{ once: true }
+			);
+		} else {
+			window.addEventListener("deviceorientation", mobileParallax);
 		}
 	}
 </script>
