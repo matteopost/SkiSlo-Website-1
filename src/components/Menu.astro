@@ -5,44 +5,34 @@ import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 ---
 
-<div class="fixed flex flex-col gap-1 w-full sm:max-w-sm p-2 sm:p-4 font-light">
+<div 
+    x-data="{ activeMenu: null }"
+    class="fixed flex flex-col gap-1 w-full sm:max-w-sm p-2 sm:p-4 font-light z-50"
+>
     <img src="/Logo.svg" alt="logo" class="mb-2 max-sm:mt-1 opacity-95">
-    <MenuComponent
-    txt={t("nav.1")}
-    link=""
-    />
-    <MenuComponent
-    txt={t("nav.2")}
-    link=""
-    />
-    <MenuComponent
-    txt={t("nav.3")}
-    link=""
-    />
-    <MenuComponent
-    txt={t("nav.4")}
-    link=""
-    />
+
+    <MenuComponent txt={t("nav.1")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'" />
+    <MenuComponent txt={t("nav.2")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'" />
+    <MenuComponent txt={t("nav.3")} link="#" x-on:click.prevent="activeMenu = activeMenu === 3 ? null : 3" />
+    <MenuComponent txt={t("nav.4")} link="#" x-on:click.prevent="activeMenu = activeMenu === 4 ? null : 4" />
 
     <LangSwitcher/>
 
+    <div 
+        x-data="{ showCookie: localStorage.getItem('cookieAccepted') !== 'true' }" 
+    >
+        <div
+            x-show="showCookie"
+            x-cloak
+            x-transition.opacity.duration.150ms
+            class="box text-xs sm:text-sm relative w-full"
+        >
+            <button
+                @click="showCookie = false; localStorage.setItem('cookieAccepted', 'true')"
+                class="absolute top-[3px] left-[6px] rotate-45 transform cursor-pointer hover:opacity-50 transition"
+            >+</button>
 
-	<div 
-		x-data="{ showCookie: localStorage.getItem('cookieAccepted') !== 'true' }" 
-	>
-		<div
-			x-show="showCookie"
-			x-cloak
-			x-transition.opacity.duration.150ms
-			class="box text-xs sm:text-sm relative w-full"
-		>
-			<button
-				@click="showCookie = false; localStorage.setItem('cookieAccepted', 'true')"
-				class="absolute top-[3px] left-[6px] rotate-45 transform cursor-pointer hover:opacity-50 transition"
-			>+</button>
-
-			<p class="mt-4">{t("nav.cookie")}</p>
-		</div>
-	</div>
-</div>
+            <p class="mt-4">{t("nav.cookie")}</p>
+        </div>
+    </div>
 </div>

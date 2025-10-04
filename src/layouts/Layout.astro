@@ -21,19 +21,19 @@ const currentLocale = astroI18n.locale;
 
 		<meta property="og:title" content={t("index.title")} />
 		<meta property="og:description" content={t("description")} />
-		<meta property="og:image" content=`../../src/assets/Card.png` />
+		<meta property="og:image" content=`/Card.png` />
 		<meta property="og:url" content={t("url")} />
 		<meta property="og:type" content="website" />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={t("index.title")} />
 		<meta name="twitter:description" content={t("description")} />
-		<meta name="twitter:image" content=`../../src/assets/Card.png` />
+		<meta name="twitter:image" content=`/Card.png` />
 
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSLo</title>
 	</head>
-	<body class="bg-black text-white relative overflow-hidden ">
+	<body class="bg-black text-white relative overflow-y-auto no-scrollbar">
 		<!-- Background -->
 		<div class="fixed inset-0 -z-50 ">
 			<Image
@@ -43,13 +43,13 @@ const currentLocale = astroI18n.locale;
 				format="webp"                           
 				widths={[640, 1024, 1440, 1920, 2200, 2500]}        
 				sizes="100vw"
-				class="w-screen h-screen object-cover transform origin-center opacity-90 transition-transform duration-200 ease-out scale-105"
+				class="w-screen h-screen object-cover transform origin-center opacity-80 transition-transform duration-200 ease-out scale-105"
 			/>
 		</div>
 
 
 		<Menu/>
-		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[320px] mt-[53px] ">
+		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[320px] mt-[53px]  ">
 			<div class="max-md:hidden"></div>
 			<div class="text-xs sm:text-sm w-full"> <slot /> </div>
 		</div>
@@ -66,7 +66,7 @@ const currentLocale = astroI18n.locale;
 <script is:inline>
 	if (window.innerWidth >= 640) {
 		const img = document.getElementById("bg-image");
-		const strength = 5; // lower = smaller movement
+		const strength = 5; 
 		window.addEventListener("mousemove", (e) => {
 			const x = (e.clientX / window.innerWidth - 0.5) * strength;
 			const y = (e.clientY / window.innerHeight - 0.5) * strength;
@@ -86,8 +86,14 @@ const currentLocale = astroI18n.locale;
 
 </script>
 
-<!-- <script is:inline>
-	import Alpine from 'alpinejs';
-	window.Alpine = Alpine;
-	Alpine.start();
-</script> -->
+<script is:inline>
+document.addEventListener('alpine:init', () => {
+  Alpine.store('menu', { active: null }); 
+});
+</script>
+
+<script is:inline>
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();
+</script>

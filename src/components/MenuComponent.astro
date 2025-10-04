@@ -1,15 +1,14 @@
 ---
 interface Props {
-	txt: string;
-	link: string;
+    txt: string;
+    link: string;
 }
-
-const { txt, link } = Astro.props;
+const { txt, link, ...rest } = Astro.props;
 ---
 
-
 <a href={link}
-class="w-full hover:bg-white/50 hover:text-white transition box"
+   {...rest}
+   class="w-full hover:bg-white/50 hover:text-white transition box uppercase cursor-pointer"
 >
     {txt}
     <slot />

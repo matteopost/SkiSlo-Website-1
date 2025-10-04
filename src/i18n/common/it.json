@@ -15,5 +15,15 @@
 
 	"description":"SkiSlo è un progetto di ricerca dell’Alta Scuola Politecnica, sviluppato dal Politecnico di Milano e dal Politecnico di Torino in collaborazione con la Fondazione Matilde Lorenzi. Il progetto realizza modelli digital twin e tecnologie di mappatura delle piste basati su intelligenza artificiale per prevedere e ridurre gli incidenti sciistici, creando ambienti di sci più sicuri e intelligenti.",
 
-	"url":"skislo.org"
+	"url":"skislo.org",
+
+	"Mission": {
+		"1":"SkiSlo è un progetto di ricerca dedicato a migliorare la sicurezza degli sciatori, con particolare attenzione ai rischi principali affrontati dagli atleti professionisti e competitivi.",
+		"2":"Scopo",
+		"3":"Il progetto sviluppa un sistema di mappatura ad alta fedeltà delle piste basato su un Modello Digitale di Superficie (DSM) e integra uno strumento per l’analisi del manto nevoso. Include inoltre un modello dinamico dello sciatore per simulare l’interazione tra atleta e condizioni della pista. I dati raccolti vengono utilizzati per eseguire simulazioni avanzate, individuando le aree più pericolose tramite ottimizzazione delle funzioni di rischio e generando mappe di rischio dettagliate che evidenziano i pericoli per zona o settore.",
+		"4":"Obiettivi Finali",
+		"5":"L’obiettivo finale è validare le simulazioni e applicare gli strumenti sviluppati a scenari reali, supportando gli impianti sciistici nell’adozione di misure di sicurezza efficaci e nella riduzione del numero e della gravità degli incidenti. SkiSlo mira inoltre a creare uno strumento capace di tradurre i risultati dei modelli di rischio in linee guida pratiche per impianti e federazioni sciistiche.",
+		"6":"Storia",
+		"7":"SkiSlo nasce da una tragedia. Durante un allenamento in Val Senales, Matilde Lorenzi è rimasta vittima di un grave incidente. La sua famiglia ha fondato la Fondazione Matilde Lorenzi per promuovere la sicurezza e la prevenzione sulle piste, affinché gli atleti possano allenarsi in ambienti più sicuri. SkiSlo ha fatto propria questa missione, sviluppando tecnologie innovative per ridurre i rischi e trasformare il futuro dello sci — affinché nessun atleta debba affrontare il destino di Matilde."
+	}
 }

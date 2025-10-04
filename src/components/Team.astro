@@ -1,0 +1,38 @@
+---
+import { astroI18n, t } from "astro-i18n";
+astroI18n.locale;
+---
+
+<div 
+  x-show="$store.menu.active === 'team'" 
+  x-transition.opacity.duration.100ms
+  x-cloak
+  class="w-full flex flex-col items-center justify-center gap-6 py-8 box"
+>
+  <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center mt-4">
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Andrea Pantano
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Andrea Trabotto
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Cosmo Spinosa
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Davide Cortinovis
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Giulia De Pasquale
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Nunzio Licalzi
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Matteo Postinghel
+    </div>
+    <div class="box bg-background border border-gray-200 dark:border-gray-700 rounded-lg px-6 py-4 shadow-sm font-light text-lg">
+      Riccardo Savio
+    </div>
+  </div>
+</div>
