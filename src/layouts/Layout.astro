@@ -10,77 +10,70 @@ const currentLocale = astroI18n.locale;
 <!doctype html>
 <html lang={currentLocale}>
 	<head>
+		
+		<meta name="theme-color" content="#1e1e1e"/>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="stylesheet" href="/src/styles/global.css">
+		<title>SkiSLo</title>
 	</head>
-	<body class="bg-black text-white relative overflow-hidden min-h-screen">
+	<body class="bg-black text-white relative overflow-hidden ">
 		<!-- Background -->
-		<div class="fixed inset-0 -z-50 overflow-hidden">
+		<div class="fixed inset-0 -z-50 ">
 			<Image
 				id="bg-image"
 				src={BgImage}
 				alt="Background"
-				class="w-screen h-screen object-cover transform origin-center opacity-90 transition-transform duration-200 ease-out scale-105";
+				format="webp"                           
+				widths={[640, 1024, 1440, 1920, 2200, 2500]}        
+				sizes="100vw"
+				class="w-screen h-screen object-cover transform origin-center opacity-90 transition-transform duration-200 ease-out scale-105"
 			/>
 		</div>
 
 
 		<Menu/>
-		<!-- Content -->
-		<!-- <LangSwitcher /> -->
-		<slot />
+		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[320px] mt-[53px] ">
+			<div class="max-md:hidden"></div>
+			<div class="text-xs sm:text-sm w-full"> <slot /> </div>
+		</div>
 	</body>
 </html>
 
 <style is:global>
-
+	[x-cloak] {
+		display: none !important;
+	}
+	
 </style>
 
-
 <script is:inline>
-	const img = document.getElementById("bg-image");
-	const strength = 25;
-
-	// desktop parallax
-	function desktopParallax(e) {
-		const x = (e.clientX / window.innerWidth - 0.5) * strength;
-		const y = (e.clientY / window.innerHeight - 0.5) * strength;
-		img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
-	}
-
-	// mobile gyroscope parallax (from your linked CodePen)
-	function mobileParallax(e) {
-		const x = (e.gamma || 0) / 45 * strength; // tilt left/right
-		const y = (e.beta || 0) / 45 * strength;  // tilt front/back
-		img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
-	}
-
-	function resetParallax() {
-		img.style.transform = "translate(0,0) scale(1)";
-	}
-
 	if (window.innerWidth >= 640) {
-		window.addEventListener("mousemove", desktopParallax);
-		window.addEventListener("mouseleave", resetParallax);
-	} else if (window.DeviceOrientationEvent) {
-		// for iOS permission
-		if (typeof DeviceOrientationEvent.requestPermission === "function") {
-			document.body.addEventListener(
-				"click",
-				() => {
-					DeviceOrientationEvent.requestPermission().then((res) => {
-						if (res === "granted") {
-							window.addEventListener("deviceorientation", mobileParallax);
-						}
-					});
-				},
-				{ once: true }
-			);
-		} else {
-			window.addEventListener("deviceorientation", mobileParallax);
-		}
+		const img = document.getElementById("bg-image");
+		const strength = 5; // lower = smaller movement
+		window.addEventListener("mousemove", (e) => {
+			const x = (e.clientX / window.innerWidth - 0.5) * strength;
+			const y = (e.clientY / window.innerHeight - 0.5) * strength;
+			img.style.transform = `translate(${x}px, ${y}px) scale(1.05)`;
+		});
+		window.addEventListener("mouseleave", () => {
+			img.style.transform = "translate(0, 0) scale(1)";
+		});
+	} else {
+		window.addEventListener("scroll", () => {
+			const scrollY = window.scrollY;
+			const translateY = scrollY * strength;
+			img.style.transform = `translateY(${translateY}px) scale(1.05)`;
+		});
 	}
+
+
 </script>
+
+<!-- <script is:inline>
+	import Alpine from 'alpinejs';
+	window.Alpine = Alpine;
+	Alpine.start();
+</script> -->

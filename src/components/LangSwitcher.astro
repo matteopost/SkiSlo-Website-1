@@ -47,16 +47,15 @@ if (!showCurrent) {
     ])}
 </div> -->
 
-<div class="flex bg-white/20 hover:bg-white/50 text-white/80 hover:text-white px-1 backdrop-blur-md">
-	{links
-		.filter(({ locale }) => locale !== astroI18n.locale)
-		.map(({ href, label }) => (
-			<a
-				href={href}
-				class="transition w-full"
-			>
-				{label}
-			</a>
-		))}
-</div>
+{links
+    .filter(({ locale }) => locale !== astroI18n.locale)
+    .map(({ href, label }) => (
+        <a
+            href={href}
+            class="transition w-full flex hover:bg-white/50 hover:text-white box"
+        >
+            {label}
+        </a>
+))}
+
 

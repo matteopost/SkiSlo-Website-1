@@ -2,6 +2,7 @@
 
 import Layout from '../../layouts/Layout.astro';
 import "../../styles/global.css";
+import Mission from '../../components/Mission.astro';
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 
@@ -11,5 +12,5 @@ astroI18n.locale;
 ---
 
 <Layout>
-    <!-- {t("index.title")} -->
+    <Mission/>
 </Layout>

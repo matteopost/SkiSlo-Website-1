@@ -1,6 +1,79 @@
 @import "tailwindcss";
 
 @layer utilities {
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: 'ABCDiatypeEdu';
+    src: url('/src/assets/fonts/ABCDiatypeEdu/ABCDiatypeEdu-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    }
+
+    body {
+        font-family: 'ABCDiatypeEdu', sans-serif;
+    }
+
+    *{
+        @apply leading-[1.1];
+    }
+
     html, body {
         height: 100%;
         width: 100%;
@@ -9,7 +82,10 @@
     }
 
     a{
-        @apply text-sm;
+        @apply text-xs sm:text-sm;
     }
 
+    .box{
+        @apply px-[6px] py-[6px] rounded-md  backdrop-blur-xs bg-white/20 text-white/80;
+    }
 }
