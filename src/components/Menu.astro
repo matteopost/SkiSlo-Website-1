@@ -4,10 +4,10 @@ import LangSwitcher from "../../src/components/LangSwitcher.astro";
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 ---
-
+<!-- fadeIn anim-delay-1500ms -->
 <div 
     x-data="{ activeMenu: null }"
-    class="fixed flex flex-col gap-1 w-full sm:max-w-sm p-2 sm:p-4 font-light z-50"
+    class="fixed flex flex-col gap-1 w-full sm:max-w-sm p-2 sm:p-4 font-light z-50 "
 >
     <img 
         src="/Logo.svg" 
@@ -19,7 +19,6 @@ astroI18n.locale;
     <MenuComponent txt={t("nav.1")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'" />
     <MenuComponent txt={t("nav.2")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'" />
     <MenuComponent txt={t("nav.3")} link="#" x-on:click.prevent="activeMenu = activeMenu === 3 ? null : 3" />
-    <MenuComponent txt={t("nav.4")} link="#" x-on:click.prevent="activeMenu = activeMenu === 4 ? null : 4" />
 
     <LangSwitcher/>
 

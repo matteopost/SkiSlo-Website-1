@@ -1,18 +1,19 @@
 ---
 import TeamCard from "./TeamCard.astro";
+import LogoCard from "./LogoCard.astro";
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 
 ---
+<!-- x-show="$store.menu.active === 'team'" -->
 <div 
-x-show="$store.menu.active === 'team'"
     x-transition.opacity.duration.200ms
     x-cloak
-    class="w-full flex flex-col gap-1"
+    class="w-full flex flex-col gap-1 mb-24"
 >
 
 
-    <div class="w-full title box sticky top-2 max-sm:top-[214px] z-40">ASP Students</div>
+    <div class="w-full title box sticky top-2 max-sm:top-[184px] z-40">ASP Students</div>
     <div class="w-full grid grid-cols-2 gap-1">
         <TeamCard
             NomeCognome="Andrea Pantano"
@@ -89,7 +90,7 @@ x-show="$store.menu.active === 'team'"
    
     </div>
 
-    <div class="w-full title box sticky top-2 max-sm:top-[214px] z-40">Professors</div>
+    <div class="w-full title box sticky top-2 max-sm:top-[184px] z-40">Professors</div>
     <div class="w-full grid grid-cols-2 gap-1">
        <TeamCard
             NomeCognome="Andrea Pantano"
@@ -162,6 +163,20 @@ x-show="$store.menu.active === 'team'"
             Email="riccardo.savio@asp-poli.it"
             Linkedin="https://www.linkedin.com/in/matteopostinghel/"
             Website="https://matteopostinghel.com/"
+        />
+    </div>
+
+    <div class="w-full title box sticky top-2 max-sm:top-[214px] z-40">Partners</div>
+    <div class="w-full grid grid-cols-2 gap-1">
+        <LogoCard
+            src="/logo/logo polimi.svg"
+            alt="polimi"
+            link="https://polimi.it/"
+        />
+        <LogoCard
+            src="/logo/logo polito.svg"
+            alt="polito"
+            link="https://www.polito.it/"
         />
     </div>
 

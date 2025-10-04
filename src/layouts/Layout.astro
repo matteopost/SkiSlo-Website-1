@@ -32,9 +32,9 @@ const currentLocale = astroI18n.locale;
 		<meta name="twitter:image" content=`/Card.png` />
 
 		<link rel="stylesheet" href="/src/styles/global.css">
-		<title>SkiSLo</title>
+		<title>SkiSlo - Alta Scuola Politecnica</title>
 	</head>
-	<body class="bg-black text-white relative overflow-y-auto no-scrollbar">
+	<body class="bg-[#252525] text-white relative overflow-y-auto no-scrollbar">
 		<!-- Background -->
 		<div class="fixed inset-0 -z-50 ">
 			<Image
@@ -44,7 +44,7 @@ const currentLocale = astroI18n.locale;
 				format="webp"                           
 				widths={[640, 1024, 1440, 1920, 2200, 2500]}        
 				sizes="100vw"
-				class="w-screen h-screen object-cover transform origin-center opacity-80 transition-transform duration-200 ease-out scale-105"
+				class="w-screen h-screen object-cover transform origin-center opacity-80 transition-transform animate-fadeZoom"
 			/>
 		</div>
 
@@ -61,10 +61,20 @@ const currentLocale = astroI18n.locale;
 	[x-cloak] {
 		display: none !important;
 	}
+
+
+	@keyframes fadeZoom {
+		from { opacity: 0; transform: scale(1); }
+		to { opacity: 0.8; transform: scale(1.05); }
+	}
+	.animate-fadeZoom {
+	animation: fadeZoom 2000ms ease-in-out forwards;
+	}
+
 	
 </style>
 
-<script is:inline>
+<!-- <script is:inline>
 	if (window.innerWidth >= 640) {
 		const img = document.getElementById("bg-image");
 		const strength = 5; 
@@ -85,7 +95,7 @@ const currentLocale = astroI18n.locale;
 	}
 
 
-</script>
+</script> -->
 
 <script is:inline>
 document.addEventListener('alpine:init', () => {
