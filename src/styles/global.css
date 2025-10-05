@@ -75,8 +75,6 @@
     }
 
     html, body {
-        height: 100dvh;
-        width: 100%;
         overflow-x: hidden;
         scrollbar-width: none; 
         -ms-overflow-style: none; 
