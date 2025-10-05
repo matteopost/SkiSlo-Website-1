@@ -34,7 +34,7 @@ const currentLocale = astroI18n.locale;
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSlo - Alta Scuola Politecnica</title>
 	</head>
-	<body class="bg-[#252525] text-white relative overflow-y-auto no-scrollbar" >
+	<body class="bg-[#252525] text-white h-screen overflow-y-auto no-scrollbar" >
 		<!-- Background -->
 		<div class="fixed inset-0 -z-50 ">
 			<Image
@@ -50,7 +50,7 @@ const currentLocale = astroI18n.locale;
 
 
 		<Menu/>
-		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full  max-md:mt-[50vh] mt-[53px]  ">
+		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[50vh] mt-[53px]  ">
 			<div class="max-md:hidden"></div>
 			<div class="text-xs sm:text-sm w-full "> <slot /> </div>
 		</div>
