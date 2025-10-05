@@ -78,8 +78,8 @@
         height: 100%;
         width: 100%;
         overflow-x: hidden;
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
     }
 
     ::-webkit-scrollbar {
@@ -95,7 +95,7 @@
     }
 
     .title{
-        @apply text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-light;
+        @apply text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-light;
     }
 
     
