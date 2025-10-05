@@ -8,14 +8,13 @@ astroI18n.locale;
 <!-- x-show="$store.menu.active === 'team'" -->
 <div 
     x-transition.opacity.duration.200ms
-    x-show="$store.menu.active === 'team'"
     x-cloak
     class="w-full flex flex-col gap-1 mb-24"
 >
 
 
-    <div class="w-full title box sticky top-2 max-sm:top-[184px] z-40">ASP Students</div>
-    <div class="w-full grid grid-cols-2 gap-1">
+    <div class="w-full title-card box">ASP Students</div>
+    <div class="w-full grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
         <TeamCard
             NomeCognome="Andrea Pantano"
             Description={t("Team.Students.AndreaP.Description")}
@@ -91,8 +90,8 @@ astroI18n.locale;
    
     </div>
 
-    <div class="w-full title box sticky top-2 max-sm:top-[184px] z-40">Professors</div>
-    <div class="w-full grid grid-cols-2 gap-1">
+    <div class="w-full title-card box">Professors</div>
+    <div class="w-full grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1">
        <TeamCard
             NomeCognome="Andrea Pantano"
             Description={t("Team.Students.AndreaP.Description")}
