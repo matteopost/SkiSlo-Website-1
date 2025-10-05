@@ -30,18 +30,18 @@
 	"Team": {
 		"Students": {
 			"AndreaP": {
-				"Description": "Visual and Digital System Designer, che incrocia un approccio human-centered con le nuove tecnologie da Monaco di Baviera con sede a Milano.",
-				"Master": "MSc Design della Comunicazione",
+				"Description": "Studente di ingegneria aerospaziale con una forte passione per i lanciatori. Concentrato sull’apprendimento attraverso la pratica e sul contributo positivo al progresso tecnologico, al lavoro di squadra e alla comunità aerospaziale.",
+				"Master": "MSc Ingegneria Aerospaziale",
 				"University": "Politecnico di Torino"
 			},
 			"AndreaT": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Ingegnere dell’intelligenza artificiale, appassionato alla matematica ed alla ricerca scientifica. Aiutando a mettere l’intelligenza artificiale a servizio dell’intuizione umana.",
+				"Master": "MSc Ingegneria Informatica - Intelligenza Artificiale",
 				"University": "Politecnico of Milan"
 			},
 			"Cosmo": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Studente di ingegneria aerospaziale con una passione per l'innovazione, la progettazione di lanciatori e sistemi propulsivi. Spinto da curiosità, affrontando ogni sfida con determinazione ed una mentalità rivolta al futuro.",
+				"Master": "MSc Ingegneria Aerospaziale - Sistemi Propulsivi",
 				"University": "Politecnico of Torino"
 			},
 			"Davide": {
@@ -50,8 +50,8 @@
 				"University": "Politecnico of Milan"
 			},
 			"Giulia": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Sono una ragazza curiosa, appassionata di matematica e delle sue applicazioni, specializzata in metodi computazionali per modellare fenomeni fisici.",
+				"Master": "MSc Ingegneria Matematica – Scienza Computazionale e Apprendimento Computazionale",
 				"University": "Politecnico of Milan"
 			},
 			"Nunzio": {
@@ -66,7 +66,7 @@
 			},
 			"Riccardo": {
 				"Description": "Ingegnere aerospaziale guidato da curiosità e mentalità intraprendente, determinato a delineare nuovi confini nel settore aerospaziale e oltre.",
-				"Master": "MSc Ingegneria Aerospaziale",
+				"Master": "MSc  Ingegneria Aerospaziale – Indirizzo Aerogasdinamica",
 				"University": "Politecnico of Torino"
 			}
 		}

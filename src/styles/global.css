@@ -71,7 +71,7 @@
     }
 
     *{
-        @apply leading-[1.1] tracking-tight;
+        @apply leading-[1.05] tracking-tight;
     }
 
     html, body {

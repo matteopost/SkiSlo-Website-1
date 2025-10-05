@@ -30,18 +30,18 @@
 	"Team": {
 		"Students": {
 			"AndreaP": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Driven aerospace engineering student passionate about rocketry. Focused on learning through action and contributing positively to technological progress, teamwork, and the broader aerospace community.",
+				"Master": "MSc Aerospace Engineering",
 				"University": "Politecnico of Turin"
 			},
 			"AndreaT": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Artificial Intelligence engineer, loving maths and scientific research. Helping to put artificial intelligence in service of human intuition.",
+				"Master": "MSc Computer Science and Engineering - Artificial Intelligence",
 				"University": "Politecnico of Milan"
 			},
 			"Cosmo": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "Aerospace engineering student passionate about innovation, rocket design and propulsion systems. Driven by curiosity, approaching challenges with determination and a forward-looking mindset.",
+				"Master": "MSc Aerospace Engineering - Propulsion Systems",
 				"University": "Politecnico of Turin"
 			},
 			"Davide": {
@@ -50,8 +50,8 @@
 				"University": "Politecnico of Milan"
 			},
 			"Giulia": {
-				"Description": "Visual and digital system designer, intersecting a human-centered approach and new technologies from Munich based in Milan.",
-				"Master": "MSc Communication Design",
+				"Description": "I am a curious girl, passionate about mathematics and its applications, specialized in computational methods to model physical phenomena.",
+				"Master": "MSc Mathematical Engineering - Computational science and Computational Learning",
 				"University": "Politecnico of Milan"
 			},
 			"Nunzio": {
@@ -66,7 +66,7 @@
 			},
 			"Riccardo": {
 				"Description": "Aerospace engineer driven by curiosity and a growth-oriented mindset, determined to shape the future of aerospace and beyond.",
-				"Master": "MSc Aerospace Engineering",
+				"Master": "MSc in Aerospace engineering - Aerogasdynamics track",
 				"University": "Politecnico of Turin"
 			}
 		}
