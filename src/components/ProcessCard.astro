@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  status?: "done" | "current" | "upcoming";
+}
+
+const { title, text, status = "upcoming" } = Astro.props;
+---
+
+<div class="relative flex w-full font-light">
+  <div class="relative w-[1px] bg-white ml-1 mr-3 sm:ml-0 sm:mr-4">
+    <div
+      class={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full 
+        ${status === "done" ? "bg-white" : ""}
+        ${status === "current" ? "bg-white shadow-[0_0_10px_2px_rgba(255,255,255,0.8)]" : ""}
+        ${status === "upcoming" ? "" : ""}`}
+    ></div>
+  </div>
+
+  <div class="flex-1 pb-1 w-full">
+    <div class="box flex flex-col w-full">
+      <h1 class={`title mb-2 ${status === "upcoming" ? "opacity-50" : ""}`}>{title}</h1>
+      <p class={`text ${status === "upcoming" ? "opacity-50" : ""}`}>{text}</p>
+    </div>
+  </div>
+</div>

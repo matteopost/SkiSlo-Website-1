@@ -21,23 +21,29 @@ const { NomeCognome, Description, Master, University, Email, Linkedin, Website }
     <div class="title-card">{NomeCognome}</div>
     <div class="flex flex-col gap-1 mt-[8%] lg:mt-[5%] xl:[8%]">
       <div class="text-card hyphens-auto">{Description}</div>
-      <div class="text-card opacity-50">{Master}, {University}</div>
+      <div class="text-card opacity-50">
+        {Master}
+        {Master && University ? ", " : ""}
+        {University}
+      </div>
     </div>
   </div>
 
   <div class="flex gap-2">
     {Email && (
-      <a href={`mailto:${Email}`} target="_blank" class="hover:opacity-50 transition-opacity text-card">
+      <a href={`mailto:${Email}`} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity text-card">
         E-Mail
       </a>
     )}
+
     {Linkedin && (
-      <a href={Linkedin} target="_blank" class="hover:opacity-50 transition-opacity text-card">
+      <a href={Linkedin} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity text-card">
         Linked-In
       </a>
     )}
+
     {Website && (
-      <a href={Website} target="_blank" class="hover:opacity-50 transition-opacity text-card">
+      <a href={Website} target="_blank" class="opacity-50 hover:opacity-100 transition-opacity text-card">
         Website
       </a>
     )}

@@ -6,8 +6,7 @@
 	"nav": {
 	"1": "Mission",
 	"2": "Team",
-	"3": "Partner",
-	"4": "About",
+	"3": "Process",
 	"cookie": "By browsing this site, you automatically accept cookies."
 	},
 
@@ -15,7 +14,7 @@
 
 	"description":"SkiSlo is a research project by Alta Scuola Politecnica, Politecnico di Milano and Politecnico di Torino, in collaboration with Fondazione Matilde Lorenzi. It develops AI-driven digital twin models and slope mapping technologies to predict and reduce ski accidents, creating safer and smarter ski environments.",
 
-	"url":"skislo.org",
+	"url":"skislo.eu/en",
 
 	"Mission": {
 		"1":"SkiSlo is a research project dedicated to enhancing skier safety, with a specific focus on identifying the main hazards faced by professional and competitive athletes.",
@@ -68,6 +67,17 @@
 				"Description": "Aerospace engineer driven by curiosity and a growth-oriented mindset, determined to shape the future of aerospace and beyond.",
 				"Master": "MSc in Aerospace engineering - Aerogasdynamics track",
 				"University": "Politecnico of Turin"
+			}
+		},
+		"Professors":{
+			"":""
+		},
+		"Fondation":{
+			"Adolfo":{
+				"Description": ""
+			},
+			"Lucrezia":{
+				"Description": "Founder and member of the board of directors"
 			}
 		}
 	}

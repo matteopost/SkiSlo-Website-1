@@ -6,8 +6,7 @@
 	"nav": {
 	"1": "Missione",
 	"2": "Team",
-	"3": "Partner",
-	"4": "About",
+	"3": "Processo",
 	"cookie": "Navigando su questo sito, accetti automaticamente i cookie."
 	},
 
@@ -15,7 +14,7 @@
 
 	"description":"SkiSlo è un progetto di ricerca dell’Alta Scuola Politecnica, sviluppato dal Politecnico di Milano e dal Politecnico di Torino in collaborazione con la Fondazione Matilde Lorenzi. Il progetto realizza modelli digital twin e tecnologie di mappatura delle piste basati su intelligenza artificiale per prevedere e ridurre gli incidenti sciistici, creando ambienti di sci più sicuri e intelligenti.",
 
-	"url":"skislo.org",
+	"url":"skislo.eu",
 
 	"Mission": {
 		"1":"SkiSlo è un progetto di ricerca dedicato a migliorare la sicurezza degli sciatori, con particolare attenzione ai rischi principali affrontati dagli atleti professionisti e competitivi.",
@@ -68,6 +67,17 @@
 				"Description": "Ingegnere aerospaziale guidato da curiosità e mentalità intraprendente, determinato a delineare nuovi confini nel settore aerospaziale e oltre.",
 				"Master": "MSc  Ingegneria Aerospaziale – Indirizzo Aerogasdinamica",
 				"University": "Politecnico of Torino"
+			}
+		},
+		"Professors":{
+			"":""
+		},
+		"Fondation":{
+			"Adolfo":{
+				"Description": ""
+			},
+			"Lucrezia":{
+				"Description": "Fondatrice e membro del consiglio di amministrazione"
 			}
 		}
 	}

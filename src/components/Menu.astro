@@ -18,7 +18,7 @@ astroI18n.locale;
 
     <MenuComponent txt={t("nav.1")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'" />
     <MenuComponent txt={t("nav.2")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'" />
-    <MenuComponent txt={t("nav.3")} link="#" x-on:click.prevent="activeMenu = activeMenu === 3 ? null : 3" />
+    <MenuComponent txt={t("nav.3")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'process' ? null : 'process'" />
 
     <LangSwitcher/>
 
@@ -40,3 +40,9 @@ astroI18n.locale;
         </div>
     </div>
 </div>
+
+<style is:global>
+    .scroll-top {
+        scroll-behavior: smooth;
+    }
+</style>

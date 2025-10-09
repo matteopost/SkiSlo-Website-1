@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import "../../styles/global.css";
 import Mission from '../../components/Mission.astro';
 import Team from '../../components/Team.astro';
+import Process from '../../components/Process.astro';
 import { astroI18n, t } from "astro-i18n";
 astroI18n.locale;
 
@@ -16,5 +17,6 @@ astroI18n.locale;
 	<div x-data>
 		<Mission />
 		<Team />
+		<Process />
 	</div>
 </Layout>
