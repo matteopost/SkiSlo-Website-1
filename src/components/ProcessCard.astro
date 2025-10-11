@@ -20,8 +20,8 @@ const { title, text, status = "upcoming" } = Astro.props;
 
   <div class="flex-1 pb-1 w-full">
     <div class="box flex flex-col w-full">
-      <h1 class={`title mb-2 ${status === "upcoming" ? "opacity-50" : ""}`}>{title}</h1>
-      <p class={`text ${status === "upcoming" ? "opacity-50" : ""}`}>{text}</p>
+      <h1 class={`title uppercase  mb-2 ${status === "upcoming" ? "opacity-50" : ""}`}>{title}</h1>
+      <p class={`title ${status === "upcoming" ? "opacity-50" : ""}`}>{text}</p>
     </div>
   </div>
 </div>
