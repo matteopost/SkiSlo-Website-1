@@ -16,6 +16,9 @@ const currentLocale = astroI18n.locale;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
 		<meta name="generator" content={Astro.generator} />
 
 		<meta name="keywords" content={t("keywords")}/>
@@ -23,13 +26,47 @@ const currentLocale = astroI18n.locale;
 		<meta property="og:title" content={t("index.title")} />
 		<meta property="og:description" content={t("description")} />
 		<meta property="og:image" content=`/Card.png` />
+		<meta property="og:image:alt" content="SkiSlo – Safety and Innovation on Ski Slopes" />
 		<meta property="og:url" content={t("url")} />
 		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="SkiSlo" />
+
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={t("index.title")} />
 		<meta name="twitter:description" content={t("description")} />
 		<meta name="twitter:image" content=`/Card.png` />
+
+		<meta name="description" content={t("description")} />
+		<link rel="canonical" href={t("url")} />
+
+		<link rel="alternate" hreflang="it" href={t("url")} />
+		<link rel="alternate" hreflang="en" href={t("url")} />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://unpkg.com" />
+
+		<script type="application/ld+json" is:inline>
+		{
+			"@context": "https://schema.org",
+			"@type": "ResearchProject",
+			"name": "SkiSlo – Safety and Innovation on Ski Slopes",
+			"description": "Research project developing AI-driven digital twins for ski slope safety and accident prevention.",
+			"url": "https://skislo.eu",
+			"image": "/Card.png",
+			"keywords": "Ski Safety, AI, Digital Twin, Machine Learning, Alta Scuola Politecnica",
+			"creator": [
+			{ "@type": "CollegeOrUniversity", "name": "Politecnico di Milano" },
+			{ "@type": "CollegeOrUniversity", "name": "Politecnico di Torino" }
+			],
+			"funder": {
+			"@type": "Organization",
+			"name": "Fondazione Matilde Lorenzi"
+			},
+			"inLanguage": "it"
+		}
+		</script>
+
 
 		<script src="https://unpkg.com/alpinejs" defer></script>
 		<script is:inline>
@@ -42,7 +79,6 @@ const currentLocale = astroI18n.locale;
 		<title>SkiSlo</title>
 	</head>
 	<body class="bg-[#252525] text-white h-screen overflow-y-auto no-scrollbar" data-scroll-root>
-		<!-- Background -->
 		<div class="fixed inset-0 -z-50 ">
 			<Image
 				id="bg-image"
