@@ -41,7 +41,7 @@ const currentLocale = astroI18n.locale;
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSlo</title>
 	</head>
-	<body class="bg-[#252525] text-white h-screen overflow-y-auto no-scrollbar" >
+	<body class="bg-[#252525] text-white h-screen overflow-y-auto no-scrollbar" data-scroll-root>
 		<!-- Background -->
 		<div class="fixed inset-0 -z-50 ">
 			<Image
@@ -81,6 +81,18 @@ const currentLocale = astroI18n.locale;
 	
 </style>
 
+<script is:inline>
+  function scrollTopInstant() {
+    const el =
+      document.querySelector('[data-scroll-root]') ||
+      document.scrollingElement ||
+      document.documentElement;
+    setTimeout(() => {
+      if (el.scrollTo) el.scrollTo({ top: 0, behavior: 'smooth' });
+      else el.scrollTop = 0;
+    }, 0);
+  }
+</script>
 <!-- <script is:inline>
 	if (window.innerWidth >= 640) {
 		const img = document.getElementById("bg-image");
@@ -105,14 +117,7 @@ const currentLocale = astroI18n.locale;
 </script> -->
 
 <script is:inline>
-document.addEventListener('alpine:init', () => {
-  Alpine.store('menu', { active: null }); 
-});
+	document.addEventListener('alpine:init', () => {
+	Alpine.store('menu', { active: null }); 
+	});
 </script>
-
-<script is:inline>
-import Alpine from 'alpinejs';
-window.Alpine = Alpine;
-Alpine.start();
-</script>
-

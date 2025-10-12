@@ -11,9 +11,9 @@ const { txt, link, id, ...rest } = Astro.props;
 <a
   href={link}
   {...rest}
+  @click="scrollTopInstant()"
   :class="{ 'bg-white/50 text-white': $store.menu.active === id }"
   class="w-full transition box uppercase cursor-pointer hover:bg-white/50 hover:text-white"
 >
-  {txt}
-  <slot />
+  {txt}<slot />
 </a>

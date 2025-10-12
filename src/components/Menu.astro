@@ -13,28 +13,29 @@ astroI18n.locale;
         src="/Logo.svg" 
         alt="logo" 
         class="mb-2 max-sm:mt-1 cursor-pointer hover:opacity-90 transition-opacity" 
-        @click="$store.menu.active = null"
+        @click="scrollTopInstant(); $store.menu.active = null" 
+    />
+
+
+    <MenuComponent
+        txt={t("nav.1")}
+        link="#"
+        id="mission"
+        x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'; window.scrollTo({top: 0, behavior: 'auto'})"
     />
 
     <MenuComponent
-    txt={t('nav.1')}
-    link="#"
-    id="mission"
-    x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'"
+        txt={t("nav.2")}
+        link="#"
+        id="team"
+        x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'; window.scrollTo({top: 0, behavior: 'auto'})"
     />
 
     <MenuComponent
-    txt={t('nav.2')}
-    link="#"
-    id="team"
-    x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'"
-    />
-
-    <MenuComponent
-    txt={t('nav.3')}
-    link="#"
-    id="process"
-    x-on:click.prevent="$store.menu.active = $store.menu.active === 'process' ? null : 'process'"
+        txt={t("nav.3")}
+        link="#"
+        id="process"
+        x-on:click.prevent="$store.menu.active = $store.menu.active === 'process' ? null : 'process'; window.scrollTo({top: 0, behavior: 'auto'})"
     />
 
     <LangSwitcher/>
