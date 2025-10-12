@@ -31,6 +31,13 @@ const currentLocale = astroI18n.locale;
 		<meta name="twitter:description" content={t("description")} />
 		<meta name="twitter:image" content=`/Card.png` />
 
+		<script src="https://unpkg.com/alpinejs" defer></script>
+		<script is:inline>
+			document.addEventListener('alpine:init', () => {
+				Alpine.store('menu', { active: null });
+			});
+		</script>
+
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSlo</title>
 	</head>
@@ -50,7 +57,7 @@ const currentLocale = astroI18n.locale;
 
 
 		<Menu/>
-		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[50vh] mt-[53px] mb-24 sm:mb-12 ">
+		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[50vh] mt-[53px]">
 			<div class="max-md:hidden"></div>
 			<div class="text-xs sm:text-sm w-full h-screen"> <slot /> </div>
 		</div>
@@ -108,3 +115,4 @@ import Alpine from 'alpinejs';
 window.Alpine = Alpine;
 Alpine.start();
 </script>
+

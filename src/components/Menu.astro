@@ -16,9 +16,26 @@ astroI18n.locale;
         @click="$store.menu.active = null"
     />
 
-    <MenuComponent txt={t("nav.1")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'" />
-    <MenuComponent txt={t("nav.2")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'" />
-    <MenuComponent txt={t("nav.3")} link="#" x-on:click.prevent="$store.menu.active = $store.menu.active === 'process' ? null : 'process'" />
+    <MenuComponent
+    txt={t('nav.1')}
+    link="#"
+    id="mission"
+    x-on:click.prevent="$store.menu.active = $store.menu.active === 'mission' ? null : 'mission'"
+    />
+
+    <MenuComponent
+    txt={t('nav.2')}
+    link="#"
+    id="team"
+    x-on:click.prevent="$store.menu.active = $store.menu.active === 'team' ? null : 'team'"
+    />
+
+    <MenuComponent
+    txt={t('nav.3')}
+    link="#"
+    id="process"
+    x-on:click.prevent="$store.menu.active = $store.menu.active === 'process' ? null : 'process'"
+    />
 
     <LangSwitcher/>
 

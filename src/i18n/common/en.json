@@ -17,16 +17,23 @@
 	"url":"skislo.eu/en",
 
 	"Mission": {
-		"1":"SkiSlo is a research project dedicated to enhancing skier safety, with a specific focus on identifying the main hazards faced by professional and competitive athletes.",
+		"1":"SkiSlo is a research project dedicated to improving skier safety, with a particular focus on the risks faced by high-level athletes, including during training. SkiSlo is an initiative of the Alta Scuola Politecnica, the honors program jointly run by Politecnico di Milano and Politecnico di Torino.",
 		"2":"Goals",
-		"3":"The project develops a high-fidelity slope mapping system based on a Digital Surface Model (DSM) and integrates a snowpack data analysis tool. It also includes a dynamic skier model to simulate the interaction between athletes and slope conditions. Using this data, SkiSlo performs advanced simulations to identify dangerous areas through risk function optimization, producing detailed risk maps that highlight potential hazards by zone or sector.",
+		"3":"The project’s goal is to develop a Digital Twin of ski slopes, incorporating a high-fidelity survey of the terrain, a continuously evolving snow model based on environmental conditions, and a dynamic model of the skiers. These models are integrated to perform simulations that identify and highlight all high-risk areas along the slopes.",
 		"4":"Final Target",
-		"5":"The ultimate goal is to validate these simulations and apply the developed tools to real-world ski facilities, helping them adopt effective safety measures and reduce both the number and severity of accidents. SkiSlo aims to create a tool that translates the results of its risk models into practical safety guidelines for ski facilities and federations.",
+		"5":"The ultimate objective is to validate the simulations and apply the developed tools to real-world scenarios, translating the simulation outputs into recommendations and guidelines to reduce risks on the slopes. This tool aims to support resort operators, coaches, ski federations, and athletes themselves in adopting effective safety measures.",
 		"6":"Background",
-		"7":"SkiSlo was born from tragedy. During a training session in Val Senales, Matilde Lorenzi suffered a fatal accident. Her family established the Fondazione Matilde Lorenzi to promote ski safety and prevention initiatives, ensuring that athletes can train in safer environments. SkiSlo embraced this mission, developing innovative technologies to minimize risks and reshape the future of skiing — so that no athlete must face the same fate as Matilde."
+		"7":"SkiSlo was born out of tragedy. During a training session in Val Senales, Matilde Lorenzi suffered a fatal accident. Her family established the Matilde Lorenzi Foundation to promote safety and prevention on ski slopes, ensuring that athletes can train in safer environments. SkiSlo has embraced this mission by developing innovative technologies to reduce risk and transform the future of skiing. Athletes are often exposed to an unacceptable level of danger—a situation that can and must be improved—so that no athlete has to face the same fate as Matilde."
 	},
 
 	"Team": {
+		"Title":{
+			"1":"Students",
+			"2":"Professors",
+			"3":"Foundation Matilde Lorenzi",
+			"4":"Institutions",
+			"5":"Partners"
+		},
 		"Students": {
 			"AndreaP": {
 				"Description": "Driven aerospace engineering student passionate about rocketry. Focused on learning through action and contributing positively to technological progress, teamwork, and the broader aerospace community.",

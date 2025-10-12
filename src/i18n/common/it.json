@@ -17,16 +17,23 @@
 	"url":"skislo.eu",
 
 	"Mission": {
-		"1":"SkiSlo è un progetto di ricerca dedicato a migliorare la sicurezza degli sciatori, con particolare attenzione ai rischi principali affrontati dagli atleti professionisti e competitivi.",
+		"1":"SkiSlo è un progetto di ricerca dedicato a migliorare la sicurezza degli sciatori. L'attenzione è posta in particolare sui rischi a cui sono esposti gli atleti di alto livello, anche in allenamento. SkiSlo è un progetto dell’Alta Scuola Politecnica, la Honors School condivisa dei Politecnici di Milano e Torino.",
 		"2":"Scopo",
-		"3":"Il progetto sviluppa un sistema di mappatura ad alta fedeltà delle piste basato su un Modello Digitale di Superficie (DSM) e integra uno strumento per l’analisi del manto nevoso. Include inoltre un modello dinamico dello sciatore per simulare l’interazione tra atleta e condizioni della pista. I dati raccolti vengono utilizzati per eseguire simulazioni avanzate, individuando le aree più pericolose tramite ottimizzazione delle funzioni di rischio e generando mappe di rischio dettagliate che evidenziano i pericoli per zona o settore.",
+		"3":"L'obiettivo è lo sviluppo di un Digital Twin delle piste da sci, che includa un rilievo ad alta fedeltà della superficie, un modello della neve in continua evoluzione in base alle condizioni ambientali, e un modello dinamico degli sciatori. I modelli vengono integrati per effettuare simulazioni, dalle quali vengono dedotte ed evidenziate tutte le aree ad alto rischio presenti sulla pista.",
 		"4":"Obiettivi Finali",
-		"5":"L’obiettivo finale è validare le simulazioni e applicare gli strumenti sviluppati a scenari reali, supportando gli impianti sciistici nell’adozione di misure di sicurezza efficaci e nella riduzione del numero e della gravità degli incidenti. SkiSlo mira inoltre a creare uno strumento capace di tradurre i risultati dei modelli di rischio in linee guida pratiche per impianti e federazioni sciistiche.",
+		"5":"L’obiettivo finale è validare le simulazioni e applicare gli strumenti sviluppati a scenari reali, traducendo gli output delle simulazioni in suggerimenti e linee guida per ridurre il rischio sulle piste. Lo strumento potrà quindi supportare i gestori di impianti, gli allenatori, le federazioni sciistiche e gli atleti stessi nell'adozione di misure di sicurezza adeguate.",
 		"6":"Storia",
-		"7":"SkiSlo nasce da una tragedia. Durante un allenamento in Val Senales, Matilde Lorenzi è rimasta vittima di un grave incidente. La sua famiglia ha fondato la Fondazione Matilde Lorenzi per promuovere la sicurezza e la prevenzione sulle piste, affinché gli atleti possano allenarsi in ambienti più sicuri. SkiSlo ha fatto propria questa missione, sviluppando tecnologie innovative per ridurre i rischi e trasformare il futuro dello sci — affinché nessun atleta debba affrontare il destino di Matilde."
+		"7":"SkiSlo nasce da una tragedia. Durante un allenamento in Val Senales, Matilde Lorenzi è rimasta vittima di un grave incidente. La sua famiglia ha creato la Fondazione Matilde Lorenzi per promuovere la sicurezza e la prevenzione sulle piste, affinché gli atleti possano allenarsi in ambienti più sicuri. SkiSlo ha fatto propria questa missione, sviluppando tecnologie innovative per ridurre i rischi e trasformare il futuro dello sci. Gli atleti sono spesso esposti a un livello di rischio inaccettabile, la situazione può e deve essere migliorata — affinché nessun atleta debba affrontare il destino di Matilde."
 	},
 
 	"Team": {
+		"Title":{
+			"1":"Studenti",
+			"2":"Professori",
+			"3":"Fondazione Matilde Lorenzi",
+			"4":"Istituzioni",
+			"5":"Partners"
+		},
 		"Students": {
 			"AndreaP": {
 				"Description": "Studente di ingegneria aerospaziale con una forte passione per i lanciatori. Concentrato sull’apprendimento attraverso la pratica e sul contributo positivo al progresso tecnologico, al lavoro di squadra e alla comunità aerospaziale.",
