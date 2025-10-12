@@ -17,7 +17,7 @@ const currentLocale = astroI18n.locale;
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<link rel="manifest" href="/site.webmanifest" />
+		<!-- <link rel="manifest" href="/site.webmanifest" /> -->
 
 		<meta name="generator" content={Astro.generator} />
 
@@ -78,7 +78,7 @@ const currentLocale = astroI18n.locale;
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<title>SkiSlo</title>
 	</head>
-	<body class="bg-[#252525] text-white h-screen overflow-y-auto no-scrollbar" data-scroll-root>
+	<body class="bg-[#252525] text-white overflow-y-auto no-scrollbar" data-scroll-root>
 		<div class="fixed inset-0 -z-50 ">
 			<Image
 				id="bg-image"
@@ -95,7 +95,7 @@ const currentLocale = astroI18n.locale;
 		<Menu/>
 		<div class="flex md:grid md:grid-cols-2 p-2 sm:p-4 w-full max-md:mt-[50vh] mt-[53px]">
 			<div class="max-md:hidden"></div>
-			<div class="text-xs sm:text-sm w-full h-screen"> <slot /> </div>
+			<div class="text-xs sm:text-sm w-full"> <slot /> </div>
 		</div>
 	</body>
 </html>
