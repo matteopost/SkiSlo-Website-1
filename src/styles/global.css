@@ -103,12 +103,12 @@
     }
 
     .title-card{
-        @apply text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-light;
+        @apply text-xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-light;
     }
 
 
     .text-card{
-        @apply text-sm sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-2xl;
+        @apply text-xs sm:text-base md:text-lg lg:text-base xl:text-lg 2xl:text-2xl;
     }
 
 
