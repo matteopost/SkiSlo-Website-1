@@ -77,7 +77,11 @@
 			}
 		},
 		"Professors":{
-			"":""
+			"Giovanni": {
+				"Description": "Associate professor",
+				"Master": "Department of Control and Computer Engineering",
+				"University": "Politecnico of Turin"
+			}
 		},
 		"Fondation":{
 			"Adolfo":{

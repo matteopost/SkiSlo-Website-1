@@ -77,7 +77,11 @@
 			}
 		},
 		"Professors":{
-			"":""
+			"Giovanni": {
+				"Description": "Professore associato",
+				"Master": "Dipartimento di Automatica e Informatica",
+				"University": "Politecnico of Turin"
+			}
 		},
 		"Fondation":{
 			"Adolfo":{
