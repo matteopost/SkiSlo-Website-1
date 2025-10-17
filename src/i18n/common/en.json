@@ -32,7 +32,8 @@
 			"2":"Professors",
 			"3":"Foundation Matilde Lorenzi",
 			"4":"Institutions",
-			"5":"Partners"
+			"5":"Partners",
+			"6":"External"
 		},
 		"Students": {
 			"AndreaP": {
@@ -81,14 +82,40 @@
 				"Description": "Associate professor",
 				"Master": "Department of Control and Computer Engineering",
 				"University": "Politecnico of Turin"
+			},		
+			"Tania": {
+				"Description": "Associate professor",
+				"Master": "Department of Control and Computer Engineering",
+				"University": "Politecnico of Turin"
+			},
+			"Daniele": {
+				"Description": "Associate professor",
+				"Master": "Department of Control and Computer Engineering",
+				"University": "Politecnico of Turin"
+			},
+			"Carlo": {
+				"Description": "Associate professor",
+				"Master": "Department of Civil and Environmental Engineering",
+				"University": "Politecnico of Milan"
 			}
 		},
 		"Fondation":{
 			"Adolfo":{
-				"Description": ""
+				"Description": "Founder and member of the board of directors"
 			},
 			"Lucrezia":{
 				"Description": "Founder and member of the board of directors"
+			},
+			"Elena":{
+				"Description": "Founder and member of the board of directors"
+			}
+		},
+		"External":{
+			"Thomas":{
+				"Description": "TBD"
+			},
+			"Michele":{
+				"Description": "TBD"
 			}
 		}
 	}

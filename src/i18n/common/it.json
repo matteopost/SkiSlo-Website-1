@@ -32,7 +32,8 @@
 			"2":"Professori",
 			"3":"Fondazione Matilde Lorenzi",
 			"4":"Istituzioni",
-			"5":"Partners"
+			"5":"Partners",
+			"6":"External"
 		},
 		"Students": {
 			"AndreaP": {
@@ -81,14 +82,40 @@
 				"Description": "Professore associato",
 				"Master": "Dipartimento di Automatica e Informatica",
 				"University": "Politecnico of Turin"
+			},
+			"Tania": {
+				"Description": "Professore associato",
+				"Master": "Dipartimento di Automatica e Informatica",
+				"University": "Politecnico of Turin"
+			},
+			"Daniele": {
+				"Description": "Professore associato",
+				"Master": "Dipartimento di Automatica e Informatica",
+				"University": "Politecnico of Turin"
+			},
+			"Carlo": {
+				"Description": "Professore associato",
+				"Master": "Dipartimento di Ingegneria Civile e Ambientale",
+				"University": "Politecnico of Milan"
 			}
 		},
 		"Fondation":{
 			"Adolfo":{
-				"Description": ""
+				"Description": "Fondatrice e membro del consiglio di amministrazione"
 			},
 			"Lucrezia":{
 				"Description": "Fondatrice e membro del consiglio di amministrazione"
+			},
+			"Elena":{
+				"Description": "Fondatrice e membro del consiglio di amministrazione"
+			}
+		},
+		"External":{
+			"Thomas":{
+				"Description": "TBD"
+			},
+			"Michele":{
+				"Description": "TBD"
 			}
 		}
 	}
